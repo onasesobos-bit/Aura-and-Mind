@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aura & Mind</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <section class="header">
+        <h1 class="animate__animated animate__fadeIn"> 
+            <a href="blog.html">Aura & Mind</a></h1>
+        <nav>
+            <a href="blog.html">Home</a>
+            <a href="selfcare.html">Self-Care</a>
+            <a href="mentalhealth.html">Mental Health</a>
+            <a href="studytips.html">Study Tips</a>
+            <a href="contact2.html">Contact Us</a>
+        </nav>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
+        <form action="#" method="POST">
+            <h2>Connect With Us</h2>
+            
+            <div class="details">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Esther Onaseso" required>
+            </div>
+
+            <div class="details">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </div>
+
+            <div class="details">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="esther@gmail.com" required>
+            </div>
+
+            <div class="details">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="details">
+                <h3>How are you feeling today?</h3>
+                <label><input type="radio" name="mood" value="excited"> Excited</label>
+                <label><input type="radio" name="mood" value="angry"> Angry</label>
+                <label><input type="radio" name="mood" value="sad"> Sad</label>
+                <label><input type="radio" name="mood" value="chill"> Chill</label>
+            </div>
+
+            <div class="details">
+                <h3>What would you like help navigating?</h3>
+                <label><input type="checkbox" name="topics" value="school"> School</label>
+                <label><input type="checkbox" name="topics" value="life"> Overall life</label>
+                <label><input type="checkbox" name="topics" value="friendships"> Friendships</label>
+                <label><input type="checkbox" name="topics" value="stress"> Stress</label>
+            </div>
+
+            <div class="details">
+                <label for="preference"><h3>How do you prefer to receive information?</h3></label>
+                <select name="preference" id="preference">
+                    <option value="reminders">Gentle reminders</option>
+                    <option value="tips">Quick tips</option>
+                    <option value="listening">Just listening</option>
+                </select>
+            </div>
+
+            <div style="display: flex; gap: 10px; width: 100%;">
+                <button type="submit" class="btn" style="flex: 1;">Submit</button>
+                <button type="reset" class="btn" style="flex: 1; background-color: #cbd5e1;">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

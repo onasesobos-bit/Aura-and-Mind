@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Articles - Aura & Mind</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <section class="header">
+        <h1 class="animate__animated animate__fadeIn"> 
+            <a href="blog.html">Aura & Mind</a></h1>
+        <nav>
+            <a href="blog.html">Home</a>
+            <a href="selfcare.html">Self-Care</a>
+            <a href="mentalhealth.html">Mental Health</a>
+            <a href="studytips.html">Study Tips</a>
+            <a href="contact2.html">Contact Us</a>
+        </nav>
+    </section>
+
+    <!-- Article List Section -->
+    <div class="page-container">
+        <h1>Teen Advice Articles</h1>
+        <p>Click on any topic below to read a quick summary and helpful tips.</p>
+
+        <!-- Article 1 -->
+        <div class="article-card" onclick="toggleSummary('summary1')" style="cursor: pointer;">
+            <h3>Dealing with Exam Stress and Test Anxiety</h3>
+            <p>Feeling nervous before a big test is completely normal, but it doesn't have to ruin your day.</p>
+            <p id="summary1" style="display: none; margin-top: 10px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+                <strong>Summary:</strong> Test anxiety happens when your brain goes into fight-or-flight mode. To fix this, try taking deep breaths, studying a little bit each night instead of cramming, and eating a good breakfast. Remember, one test does not define who you are!
+            </p>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="article-card" onclick="toggleSummary('summary2')" style="cursor: pointer;">
+            <h3>How to Handle Drama with Friends</h3>
+            <p>Friendships can get complicated in middle and high school. Here is how to keep your peace.</p>
+            <p id="summary2" style="display: none; margin-top: 10px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+                <strong>Summary:</strong> Drama spreads fast when people miscommunicate. If you are having an issue with a friend, try talking to them calmly in person instead of texting back and forth. Real friends will listen to your feelings.
+            </p>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="article-card" onclick="toggleSummary('summary3')" style="cursor: pointer;">
+            <h3>Creating a Relaxing Bedtime Routine</h3>
+            <p>Struggling to sleep because your mind won't turn off? A solid routine can help.</p>
+            <p id="summary3" style="display: none; margin-top: 10px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+                <strong>Summary:</strong> Looking at a glowing phone screen right before bed tricks your brain into thinking it is still daytime. Try turning off screens 45 minutes before sleep, reading a book, or listening to calm lo-fi music.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSummary(id) {
+            let box = document.getElementById(id);
+            if (box.style.display === "none") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
